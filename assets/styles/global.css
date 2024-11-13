@@ -34,25 +34,70 @@
   --text-heading: #f9f9f9;
 }
 
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
 .logo {
+  font-family: "Leckerli One", cursive;
   font-size: 2.5rem;
   font-weight: 400;
 }
 
 .heading-md {
-  font-size: 1.75rem;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.75rem; /* 28px */
   font-weight: bold;
+  color: var(--text-heading);
 }
 .heading-sm {
+  font-family: "Baloo 2", sans-serif;
   font-size: 1.125rem;
   font-weight: bold;
+  color: var(--text-heading);
 }
 .body-md {
+  color: var(--text-body);
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
 .body-sm {
+  color: var(--text-body);
   font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
 }
 .body-xs {
+  color: var(--text-body);
   font-size: 0.75rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.gap-1 {
+  gap: 1rem;
 }

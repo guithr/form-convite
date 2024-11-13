@@ -1,0 +1,21 @@
+.main-container {
+  border-top: 1.25rem solid var(--shape-background);
+  border-right: 1.25rem solid var(--shape-background);
+  border-bottom: 1.25rem solid var(--shape-background);
+  padding: 5rem 8.125rem;
+  background-color: var(--shape-body);
+
+  & h2 {
+    margin-bottom: 2.5rem;
+  }
+  & .info-select {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+
+    & img {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+}

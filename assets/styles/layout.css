@@ -1,0 +1,11 @@
+#app {
+  display: grid;
+  grid-template-columns: 31.25% 68.75%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow-y: auto;
+}

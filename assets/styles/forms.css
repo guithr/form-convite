@@ -1,0 +1,15 @@
+@import url(fields/style.css);
+
+form {
+  display: grid;
+  gap: 3rem;
+}
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1rem;
+
+  & legend {
+    margin-bottom: 1.625rem;
+  }
+}

@@ -1,0 +1,30 @@
+aside {
+  border: 1.25rem solid var(--shape-background);
+  background-image: url(../images/background/Background.png);
+  background-position: center;
+  background-size: cover;
+
+  .aside-container {
+    display: grid;
+    position: relative;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 0.75rem;
+
+    & .logo {
+      color: var(--pink);
+      margin-block: 1rem 0.25rem;
+    }
+    & .body-md {
+      color: var(--text-heading);
+      font-weight: 300;
+    }
+    & img:first-child {
+      width: 2.8125rem;
+      height: 3rem;
+    }
+    img:last-child {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}

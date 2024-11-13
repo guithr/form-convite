@@ -13,8 +13,110 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:wght@300..800&display=swap"
       rel="stylesheet"
     />
+    <!-- MY STYLE -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>Formulário de Convite</title>
   </head>
-  <body></body>
+  <body>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <img src="./assets/images/logotipo/Logo.svg" alt="" />
+          <h1 class="logo">Festivite</h1>
+          <p class="body-md">Crie um convite digital para o seu evento</p>
+        </div>
+      </aside>
+      <main>
+        <div class="main-container">
+          <h2 class="heading-md">Crie seu convite</h2>
+
+          <form>
+            <fieldset>
+              <legend>
+                <div class="info-select">
+                  <img src="./assets/images/icons/calendar.svg" alt="" />
+                  <span class="heading-sm">Sobre o evento</span>
+                </div>
+              </legend>
+              <div class="input-wrapper">
+                <label class="body-sm" for="title">Título</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Nome do evento"
+                />
+              </div>
+              <div class="flex gap-1">
+                <div class="input-wrapper flex-1">
+                  <label class="body-sm" for="title">Início</label>
+                  <input type="date" id="start" name="start" lang="pt-BR" />
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label class="body-sm" for="title">Fim</label>
+                  <input type="date" id="end" name="end" lang="pt-BR" />
+                </div>
+              </div>
+
+              <div class="flex gap-1">
+                <div class="input-wrapper flex-1">
+                  <label class="body-sm">Tipo</label>
+                  <div class="radio-wrapper flex">
+                    <div class="radio-inner flex-1">
+                      <input type="radio" />
+                      <img src="./assets/images/icons/building-2.svg" alt="" />
+                      <p class="body-md">Presencial</p>
+                    </div>
+                    <div class="radio-inner flex-1">
+                      <input type="radio" />
+                      <img src="./assets/images/icons/video.svg" alt="" />
+                      <p class="body-md">Online</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label class="body-sm" for="title">Local</label>
+                  <input
+                    type="text"
+                    id="end"
+                    name="end"
+                    lang="pt-BR"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label class="body-sm" for="title">Descrição</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  name="description"
+                  cols="30"
+                  rows="10"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="customization-info">
+                <div class="info-select">
+                  <img
+                    src="./assets/images/icons/paintbrush-vertical.svg"
+                    alt=""
+                  />
+                  <span class="heading-sm">Personalização</span>
+                </div>
+              </legend>
+              <div class="input-wrapper">
+                <div class="radio-wrapper">
+                  <input type="radio" name="" id="" />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

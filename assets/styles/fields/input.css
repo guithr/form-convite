@@ -1,0 +1,43 @@
+input,
+textarea,
+select,
+.radio-wrapper {
+  appearance: none;
+  width: 100%;
+  background-color: var(--input-base);
+  border: 1px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-heading);
+}
+input,
+select {
+  max-height: 3rem;
+  height: 100%;
+}
+
+input::placeholder,
+input[type="date"],
+textarea::placeholder,
+selec::placeholder {
+  color: var(--input-placeholder);
+  font-size: 1rem;
+}
+input[type="date"] {
+  position: relative;
+  text-transform: uppercase;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  height: auto;
+  width: auto;
+}
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
