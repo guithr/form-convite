@@ -1,16 +1,88 @@
-.radio-wrapper {
+.switch-wrapper {
   input {
     all: unset;
   }
 
-  .radio-inner {
+  .switch-inner {
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     img {
       width: 1rem;
       height: 1rem;
+    }
+  }
+}
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+  .radio-inner {
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid transparent;
+    outline: 0.25rem solid var(--shape-button);
+    & input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+  }
+  & .radio-inner:nth-child(1) {
+    background-color: var(--brand-light);
+  }
+  & .radio-inner:nth-child(2) {
+    background-color: var(--navy);
+  }
+  & .radio-inner:nth-child(3) {
+    background-color: var(--purple);
+  }
+  & .radio-inner:nth-child(4) {
+    background-color: var(--fuschia);
+  }
+  & .radio-inner:nth-child(5) {
+    background-color: var(--pink);
+  }
+  & .radio-inner:nth-child(6) {
+    background-color: var(--danger);
+  }
+  & .radio-inner:nth-child(7) {
+    background-color: var(--orange);
+  }
+  & .radio-inner:nth-child(8) {
+    background-color: var(--yellow);
+  }
+  & .radio-inner:nth-child(9) {
+    background-color: var(--lime);
+  }
+  & .radio-inner:nth-child(10) {
+    background-color: var(--green);
+  }
+  & .radio-inner:nth-child(11) {
+    background-color: var(--cyan);
+  }
+}
+.gallery-wrapper {
+  & .radio-inner {
+    cursor: pointer;
+    background-color: var(--shape-button);
+    display: grid;
+    position: relative;
+    text-align: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+    & input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+    & img {
+      width: 100%;
     }
   }
 }

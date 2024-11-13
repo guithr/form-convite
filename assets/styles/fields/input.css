@@ -1,7 +1,7 @@
 input,
 textarea,
 select,
-.radio-wrapper {
+.switch-wrapper {
   appearance: none;
   width: 100%;
   background-color: var(--input-base);
