@@ -1,0 +1,58 @@
+:root {
+  /* BRAND */
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+
+  /* ACCENT COLORS */
+  --purple: #b259ff;
+  --fuschia: #ff59f9;
+  --pink: #ff598b;
+  --orange: #ff8b59;
+  --yellow: #ffcd59;
+  --lime: #e1ff59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --navy: #6a59ff;
+
+  /* FEEDBACK */
+  --danger: #ff5959;
+
+  /* INPUT */
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+
+  /* SHAPE */
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+
+  /* TEXT */
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.heading-md {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.heading-sm {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.body-md {
+  font-size: 1rem;
+}
+.body-sm {
+  font-size: 0.875rem;
+}
+.body-xs {
+  font-size: 0.75rem;
+}
