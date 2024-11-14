@@ -7,7 +7,7 @@ form {
 fieldset {
   border: none;
   display: grid;
-  gap: 1rem;
+  gap: 2.5rem;
 
   & legend {
     margin-bottom: 1.625rem;

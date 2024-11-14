@@ -258,7 +258,81 @@
                   </div>
                 </div>
               </div>
+              <div class="flex gap-1">
+                <div class="input-wrapper flex-1">
+                  <label for="" class="body-md">Estilo</label>
+                  <input type="checkbox" />
+                  <span></span>
+                </div>
+                <div class="input-wrapper flex-2">
+                  <label for="" class="body-md">Foto de capa</label>
+                  <input type="file" />
+                  <span class="body-md"></span>
+                </div>
+              </div>
             </fieldset>
+            <fieldset>
+              <legend>
+                <div class="info-select">
+                  <img src="./assets/images/icons/contact.svg" alt="" />
+                  <span class="heading-sm">Dados para contato</span>
+                </div>
+              </legend>
+              <div class="input-wrapper">
+                <label for="" class="body-md">Nome</label>
+                <input type="text" placeholder="Nome completo" />
+              </div>
+              <input-wrapper>
+                <div class="flex gap-1">
+                  <div class="flex-1">
+                    <label for="" class="body-md">Email</label>
+                    <input
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="exemplo@email.com"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <label for="" class="body-md">Telefone</label>
+                    <input
+                      type="tel"
+                      name=""
+                      id=""
+                      placeholder="(99) 99999-9999 "
+                    />
+                  </div>
+                </div>
+              </input-wrapper>
+            </fieldset>
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms" class="body-md">
+                Li e concordo com os <span>Termos e Condições</span> e com a
+                <span>Política de Privacidade</span>
+              </label>
+            </div>
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms" class="body-md">
+                Aceito receber atualizações e promoções por e-mail
+              </label>
+            </div>
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms" class="body-md">
+                Aceito receber atualizações e promoções por SMS
+              </label>
+            </div>
+            <div class="actions-wrapper">
+              <button class="btn-primary flex" type="submit">
+                <img src="./assets/images/icons/ticket.svg" alt="" />
+                <span class="body-md">Gerar convite</span>
+              </button>
+            </div>
           </form>
         </div>
       </main>
