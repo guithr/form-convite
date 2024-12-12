@@ -43,10 +43,12 @@
     position: relative;
     cursor: pointer;
     border-radius: 50%;
-    width: 1.75rem;
-    height: 1.75rem;
-    border: 1px solid transparent;
-    outline: 0.25rem solid var(--shape-button);
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem solid var(--shape-button);
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
+    }
     & input {
       all: unset;
       position: absolute;
