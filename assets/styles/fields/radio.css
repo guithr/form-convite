@@ -1,14 +1,35 @@
 .switch-wrapper {
-  input {
-    all: unset;
-  }
+  padding: 0;
 
   .switch-inner {
+    position: relative;
     display: flex;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0.25rem;
+    & input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+    & label {
+      margin: 0;
+    }
+    &:has(:checked) {
+      background-color: var(--shape-button);
+      border-radius: 0.3125rem;
+      font-weight: 500;
+      color: var(--text-header);
+      svg path {
+        fill: var(--brand-light);
+      }
+    }
+    p {
+      margin: 0;
+    }
     img {
       width: 1rem;
       height: 1rem;

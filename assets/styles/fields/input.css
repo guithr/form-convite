@@ -2,6 +2,7 @@ input,
 textarea,
 select,
 .switch-wrapper {
+  resize: none;
   appearance: none;
   width: 100%;
   background-color: var(--input-base);
