@@ -109,3 +109,7 @@ img {
 .gap-3 {
   gap: 3rem;
 }
+.separator {
+  height: 1px;
+  background-color: var(--input-stroke);
+}

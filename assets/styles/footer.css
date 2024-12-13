@@ -1,0 +1,8 @@
+footer {
+  & div:nth-child(1) span {
+    text-decoration: underline;
+  }
+  & .actions-wrapper {
+    margin-top: 3rem;
+  }
+}
