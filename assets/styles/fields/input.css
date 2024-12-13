@@ -43,12 +43,11 @@ label {
   margin-bottom: 0.75rem;
 }
 
-/* TOGGLE BUTTON */
-
 .input-wrapper {
   p {
     margin-bottom: 1rem;
   }
+  /* TOGGLE BUTTON */
   .switch {
     position: relative;
     display: inline-block;
@@ -122,5 +121,36 @@ label {
     position: absolute;
     left: 70px;
     top: 7px;
+  }
+}
+
+.picture-cape {
+  position: relative;
+  input {
+    all: unset;
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
+    color: var(--input-placeholder);
+    font-family: "Open-sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    &::file-selector-button {
+      opacity: 0;
+    }
+  }
+  & label {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-heading);
+    padding: 0.65625rem 0.75rem;
+    background-color: var(--shape-button);
+    width: fit-content;
+    border-radius: 0.5rem;
+    font-weight: 600;
   }
 }

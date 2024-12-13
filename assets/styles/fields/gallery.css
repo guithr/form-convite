@@ -2,4 +2,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
   gap: 0.5rem;
+  & .radio-inner {
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
+    }
+  }
 }

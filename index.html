@@ -207,7 +207,7 @@
                 <label class="body-md" for="">Tema do evento</label>
                 <div class="gallery-wrapper">
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="aniversario" />
                     <img
                       src="./assets/images/gallery-images/Image.png"
                       alt=""
@@ -215,7 +215,7 @@
                     <span class="body-sm">Aniversário</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="infantil" />
                     <img
                       src="./assets/images/gallery-images/Image-1.png"
                       alt=""
@@ -223,7 +223,7 @@
                     <span class="body-sm">Infantil</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="formatura" />
                     <img
                       src="./assets/images/gallery-images/Image-2.png"
                       alt=""
@@ -231,15 +231,7 @@
                     <span class="body-sm">Formatura</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
-                    <img
-                      src="./assets/images/gallery-images/Image-3.png"
-                      alt=""
-                    />
-                    <span class="body-sm">Casamento</span>
-                  </div>
-                  <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="cha-de-panela" />
                     <img
                       src="./assets/images/gallery-images/Image-4.png"
                       alt=""
@@ -247,7 +239,7 @@
                     <span class="body-sm">Chá de bebê</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="carnaval" />
                     <img
                       src="./assets/images/gallery-images/Image-5.png"
                       alt=""
@@ -255,7 +247,7 @@
                     <span class="body-sm">Chá de panela</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="carnaval" />
                     <img
                       src="./assets/images/gallery-images/Image-6.png"
                       alt=""
@@ -263,7 +255,7 @@
                     <span class="body-sm">Carnaval</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="pascoa" />
                     <img
                       src="./assets/images/gallery-images/Image-7.png"
                       alt=""
@@ -271,7 +263,7 @@
                     <span class="body-sm">Páscoa</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="sao-joão" />
                     <img
                       src="./assets/images/gallery-images/Image-8.png"
                       alt=""
@@ -279,7 +271,7 @@
                     <span class="body-sm">São João</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="halloween" />
                     <img
                       src="./assets/images/gallery-images/Image-9.png"
                       alt=""
@@ -287,7 +279,7 @@
                     <span class="body-sm">Halloween</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="natal" />
                     <img
                       src="./assets/images/gallery-images/Image-10.png"
                       alt=""
@@ -295,7 +287,7 @@
                     <span class="body-sm">Natal</span>
                   </div>
                   <div class="radio-inner">
-                    <input type="radio" />
+                    <input type="checkbox" name="outro" />
                     <img
                       src="./assets/images/gallery-images/Image-11.png"
                       alt=""
@@ -309,16 +301,33 @@
                   <p class="body-md">Estilos</p>
 
                   <label class="switch">
-                    <input type="checkbox" checked />
+                    <input type="checkbox" name="" checked />
                     <span class="slider round"></span>
                     <span class="text-toggle body-md"></span>
                   </label>
                 </div>
 
-                <div class="input-wrapper flex-3">
-                  <label for="" class="body-md">Foto de capa</label>
-                  <input type="file" />
-                  <span class="body-md"></span>
+                <div class="input-wrapper flex-3 picture-cape">
+                  <p class="body-md">Foto de capa</p>
+                  <input type="file" id="file" name="file" class="body-md" />
+                  <label for="file" class="body-md"
+                    ><span
+                      ><svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.2929 3.29289C15.6834 2.90237 16.3166 2.90237 16.7071 3.29289L23.3738 9.95956C23.7643 10.3501 23.7643 10.9832 23.3738 11.3738C22.9832 11.7643 22.3501 11.7643 21.9596 11.3738L17 6.41421V20C17 20.5523 16.5523 21 16 21C15.4477 21 15 20.5523 15 20V6.41421L10.0404 11.3738C9.64992 11.7643 9.01675 11.7643 8.62623 11.3738C8.2357 10.9832 8.2357 10.3501 8.62623 9.95956L15.2929 3.29289ZM4 19C4.55228 19 5 19.4477 5 20V25.3333C5 25.7754 5.17559 26.1993 5.48816 26.5118C5.80072 26.8244 6.22464 27 6.66667 27H25.3333C25.7754 27 26.1993 26.8244 26.5118 26.5118C26.8244 26.1993 27 25.7754 27 25.3333V20C27 19.4477 27.4477 19 28 19C28.5523 19 29 19.4477 29 20V25.3333C29 26.3058 28.6137 27.2384 27.9261 27.9261C27.2384 28.6137 26.3058 29 25.3333 29H6.66667C5.69421 29 4.76157 28.6137 4.07394 27.9261C3.38631 27.2384 3 26.3058 3 25.3333V20C3 19.4477 3.44772 19 4 19Z"
+                          fill="#59b2ff"
+                        />
+                      </svg> </span
+                    >Selecionar</label
+                  >
                 </div>
               </div>
             </fieldset>

@@ -21,7 +21,7 @@
     &:has(:checked) {
       background-color: var(--shape-button);
       border-radius: 0.3125rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--text-header);
       svg path {
         fill: var(--brand-light);
