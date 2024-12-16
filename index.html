@@ -350,8 +350,16 @@
               </legend>
               <div class="input-wrapper">
                 <label for="" class="body-md">Nome</label>
-                <input type="text" placeholder="Nome completo" />
+                <input type="text" placeholder="Nome completo" required />
+                <div class="error">
+                  <img
+                    src="./assets/images/icons/alert-circle.svg"
+                    alt="ícone de alerta da cor vermelha"
+                  />
+                  <span>Campo obrigatório</span>
+                </div>
               </div>
+
               <input-wrapper>
                 <div class="flex gap-1">
                   <div class="flex-1">
@@ -361,8 +369,17 @@
                       name=""
                       id=""
                       placeholder="exemplo@email.com"
+                      required
                     />
+                    <div class="error">
+                      <img
+                        src="./assets/images/icons/alert-circle.svg"
+                        alt="ícone de alerta da cor vermelha"
+                      />
+                      <span>Insira um e-mail válido</span>
+                    </div>
                   </div>
+
                   <div class="flex-1">
                     <label for="" class="body-md">Telefone</label>
                     <input

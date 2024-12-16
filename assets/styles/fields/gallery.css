@@ -3,8 +3,28 @@
   grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
   gap: 0.5rem;
   & .radio-inner {
+    cursor: pointer;
+    background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);
+    display: grid;
+    position: relative;
+    text-align: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+    &:hover {
+      background-color: var(--shape-hover);
+    }
     &:has(:checked) {
       outline: 2px solid var(--brand-light);
+    }
+    & input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+    & img {
+      width: 100%;
     }
   }
 }

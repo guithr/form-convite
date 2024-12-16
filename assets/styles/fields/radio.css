@@ -43,9 +43,12 @@
     position: relative;
     cursor: pointer;
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    border: 0.25rem solid var(--shape-button);
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 0.35rem solid var(--shape-button);
+    &:hover {
+      border: 0.35rem solid var(--shape-hover);
+    }
     &:has(:checked) {
       outline: 2px solid var(--brand-light);
     }
@@ -93,6 +96,7 @@
   & .radio-inner {
     cursor: pointer;
     background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);
     display: grid;
     position: relative;
     text-align: center;
